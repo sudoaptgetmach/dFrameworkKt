@@ -18,6 +18,7 @@ repositories {
 
 dependencies {
     paperweight.paperDevBundle("1.20.1-R0.1-SNAPSHOT")
+    implementation("com.zaxxer:HikariCP:2.3.2")
 }
 
 tasks {

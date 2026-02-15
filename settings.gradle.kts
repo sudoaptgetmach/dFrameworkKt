@@ -1,3 +1,2 @@
-
-rootProject.name = "PluginTemplate"
+rootProject.name = "dFramework"
 

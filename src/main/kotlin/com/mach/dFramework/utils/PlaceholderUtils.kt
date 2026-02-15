@@ -26,11 +26,7 @@ class PlaceholderUtils {
         fun format(message: String): TextComponent {
             return LegacyComponentSerializer.legacyAmpersand().deserialize(message.replace("\\n", "\n"))
         }
-
-        fun format(message: String, placeholders: MutableMap<String?, String?>): TextComponent {
-            return LegacyComponentSerializer.legacyAmpersand().deserialize(message.replace("\\n", "\n"))
-        }
-
+        
         fun format(message: String?, placeholders: MutableMap<String?, String?>): TextComponent? {
             return applyPlaceholder(message, placeholders)?.let {
                 LegacyComponentSerializer.legacyAmpersand().deserialize(it)
